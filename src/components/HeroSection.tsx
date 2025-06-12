@@ -11,7 +11,7 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Your ultimate digital insurance partner.
+        Your ultimate digital insurance partner!
       </motion.h2>
       <motion.p
         className="text-2xl mb-10 max-w-3xl text-gray-700"
