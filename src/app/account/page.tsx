@@ -3,7 +3,6 @@ import React from "react";
 import { SignedIn, SignedOut, SignInButton, UserButton, useUser } from "@clerk/nextjs";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { FaCar, FaHome, FaHeartbeat } from "react-icons/fa";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recharts";
 
 export default function Page() {

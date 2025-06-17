@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { FaCar, FaHome, FaHeartbeat } from "react-icons/fa";
@@ -24,7 +23,7 @@ export default function Page() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-8 text-black">Who We Are</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Insurance4U is your digital insurance partner, making the complex world of insurance simple and transparent. With just a few clicks, you can compare prices from multiple providers and get the best deals instantly. Our mission is to empower users with fast, objective, and reliable information, saving both time and money while offering excellent support throughout your insurance journey. Whether you're looking for car, home or health insurance, we’ve got you covered.
+            Insurance4U is your digital insurance partner, making the complex world of insurance simple and transparent. With just a few clicks, you can compare prices from multiple providers and get the best deals instantly. Our mission is to empower users with fast, objective, and reliable information, saving both time and money while offering excellent support throughout your insurance journey. Whether you are looking for car, home or health insurance, we’ve got you covered.
           </p>
         </div>
       </section>
