@@ -9,10 +9,9 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <Navbar />
       <HeroSection />
-      <FeaturesSection />
       <ComponentsSection />
+      <FeaturesSection />      
       <Footer />
     </div>
   );
