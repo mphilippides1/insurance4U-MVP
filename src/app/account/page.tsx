@@ -9,26 +9,10 @@ export default function Page() {
   const { user } = useUser();
 
   const assets = [
-    {
-      type: "Motoring Insurance",
-      regNumber: "ABC-1234",
-      daysLeft: 45,
-    },
-    {
-      type: "Home Insurance",
-      regNumber: "HME-5678",
-      daysLeft: 120,
-    },
-    {
-      type: "Health Insurance",
-      regNumber: "HLT-9012",
-      daysLeft: 300,
-    },
-    {
-      type: "Motoring Insurance",
-      regNumber: "XYZ-7890",
-      daysLeft: 20,
-    },
+    { type: "Motoring Insurance", regNumber: "ABC-1234", daysLeft: 45 },
+    { type: "Home Insurance", regNumber: "HME-5678", daysLeft: 120 },
+    { type: "Health Insurance", regNumber: "HLT-9012", daysLeft: 300 },
+    { type: "Motoring Insurance", regNumber: "XYZ-7890", daysLeft: 20 },
   ];
 
   const pieData = [
@@ -45,9 +29,7 @@ export default function Page() {
 
       <SignedOut>
         <div className="flex justify-center items-center min-h-screen flex-col gap-6">
-          <h1 className="text-4xl font-bold text-black text-center">
-            Please sign in to access your account
-          </h1>
+          <h1 className="text-4xl font-bold text-black text-center">Please sign in to access your account</h1>
           <SignInButton mode="modal">
             <button className="bg-[#FFE95C] text-black font-semibold px-10 py-4 rounded-full shadow-md text-lg hover:opacity-90 transition">
               Sign In
@@ -59,15 +41,11 @@ export default function Page() {
       <SignedIn>
         <section className="py-24 px-6 max-w-6xl mx-auto">
           <div className="flex justify-between items-center mb-10">
-            <h1 className="text-4xl font-bold text-black">
-              Welcome back, {user?.firstName}!
-            </h1>
+            <h1 className="text-4xl font-bold text-black">Welcome back, {user?.firstName}!</h1>
             <UserButton />
           </div>
 
-          {/* Chart & Table side by side */}
           <div className="flex flex-col lg:flex-row gap-12">
-            {/* Donut Chart */}
             <div className="bg-white p-10 rounded-3xl shadow-md border border-gray-100 flex-1">
               <h2 className="text-2xl font-bold mb-8 text-black text-center">Your Insurance Distribution</h2>
               <div className="h-96">
@@ -95,7 +73,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* Assets Table */}
             <div className="bg-white p-10 rounded-3xl shadow-md border border-gray-100 flex-1">
               <h2 className="text-2xl font-bold mb-8 text-black text-center">Your Assets</h2>
               <table className="w-full text-left">
